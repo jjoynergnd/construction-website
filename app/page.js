@@ -10,25 +10,25 @@ export default function Home() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    // Let Formspree handle actual submission
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000); // hide message after 5 seconds
+    setTimeout(() => setSubmitted(false), 5000);
   };
 
   return (
     <>
       <Navbar />
+
       <main className="max-w-5xl mx-auto p-6" id="home">
 
         {/* Hero Section */}
-        <section className="text-center my-12 bg-secondary py-16 rounded-lg shadow-lg">
-          <h1 className="text-5xl font-bold text-primary">Acme Construction</h1>
+        <section className="text-center my-12 bg-secondary py-16 rounded-xl shadow-2xl">
+          <h1 className="text-5xl font-bold text-[#1CAAA0]">Acme Construction</h1>
           <p className="mt-4 text-lg text-textPrimary max-w-xl mx-auto">
             Licensed, Bonded & Insured General Contractors Serving [Your City]
           </p>
           <a
             href="#contact"
-            className="mt-6 inline-block bg-primary text-white font-semibold px-8 py-3 rounded shadow hover:opacity-90 transition"
+            className="mt-6 inline-block bg-[#1DA1F2] text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:opacity-90 transition"
           >
             Request a Quote
           </a>
@@ -57,10 +57,10 @@ export default function Home() {
             ].map((service) => (
               <div
                 key={service.title}
-                className="p-6 border rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1 text-center"
+                className="p-6 border rounded-xl shadow-2xl hover:shadow-3xl transition hover:-translate-y-1 text-center bg-white"
               >
                 {service.icon}
-                <h3 className="font-semibold text-xl mb-2 text-primary">{service.title}</h3>
+                <h3 className="font-semibold text-xl mb-2 text-[#1CAAA0]">{service.title}</h3>
                 <p className="text-textPrimary">{service.desc}</p>
               </div>
             ))}
@@ -90,7 +90,7 @@ export default function Home() {
             ].map((project) => (
               <div
                 key={project.title}
-                className="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition hover:-translate-y-1"
+                className="overflow-hidden rounded-xl shadow-2xl hover:shadow-3xl transition hover:-translate-y-1 bg-white"
               >
                 <Image
                   src={project.img}
@@ -100,7 +100,7 @@ export default function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4 bg-white">
-                  <h3 className="font-semibold text-xl text-primary mb-2">{project.title}</h3>
+                  <h3 className="font-semibold text-xl text-[#1CAAA0] mb-2">{project.title}</h3>
                   <p className="text-textPrimary">{project.desc}</p>
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="my-12 bg-secondary py-12 px-6 rounded-lg shadow-lg">
+        <section id="contact" className="my-12 bg-secondary py-12 px-6 rounded-xl shadow-2xl">
           <h2 className="text-3xl font-bold mb-4 text-textPrimary text-center">Get in Touch</h2>
           <p className="text-center mb-6 text-textPrimary">
             Call us at <strong>(555) 555-1234</strong> or fill out the form below.
@@ -126,42 +126,40 @@ export default function Home() {
               name="name"
               placeholder="Your Name"
               required
-              className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary"
+              className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-[#1CAAA0]"
             />
             <input
               type="email"
               name="_replyto"
               placeholder="Your Email"
               required
-              className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary"
+              className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-[#1CAAA0]"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               required
-              className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary"
+              className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-[#1CAAA0]"
               rows={5}
             />
             <button
               type="submit"
-              className="bg-primary text-white font-semibold px-6 py-3 rounded shadow hover:opacity-90 transition"
+              className="bg-[#1DA1F2] text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition"
             >
               Send Message
             </button>
           </form>
 
-          {/* Success message */}
           {submitted && (
-            <div className="mt-4 text-center text-white bg-primary px-4 py-2 rounded">
+            <div className="mt-4 text-center text-white bg-[#1DA1F2] px-4 py-2 rounded-lg">
               Thank you! Your message has been sent.
             </div>
           )}
         </section>
-
       </main>
       <Footer />
 
-      {/* Smooth scroll behavior */}
+      {/* Smooth scroll */}
       <style jsx global>{`
         html {
           scroll-behavior: smooth;
