@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { Wrench, Building, Home as HomeIcon } from "lucide-react";
 
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto p-6">
-
       {/* Hero Section */}
       <section className="text-center my-12 bg-gray-100 py-16 rounded-lg shadow-lg">
         <h1 className="text-5xl font-bold text-blue-600">Acme Construction</h1>
@@ -23,14 +23,27 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { title: "Residential Construction", desc: "Custom homes, renovations, and remodeling." },
-            { title: "Commercial Projects", desc: "Office buildings, retail spaces, and warehouses." },
-            { title: "Repairs & Maintenance", desc: "Roofing, plumbing, electrical, and general upkeep." },
+            {
+              title: "Residential Construction",
+              desc: "Custom homes, renovations, and remodeling.",
+              icon: <HomeIcon className="w-10 h-10 text-orange-500 mb-4" />,
+            },
+            {
+              title: "Commercial Projects",
+              desc: "Office buildings, retail spaces, and warehouses.",
+              icon: <Building className="w-10 h-10 text-orange-500 mb-4" />,
+            },
+            {
+              title: "Repairs & Maintenance",
+              desc: "Roofing, plumbing, electrical, and general upkeep.",
+              icon: <Wrench className="w-10 h-10 text-orange-500 mb-4" />,
+            },
           ].map((service) => (
             <div
               key={service.title}
-              className="p-6 border rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1"
+              className="p-6 border rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1 text-center"
             >
+              {service.icon}
               <h3 className="font-semibold text-xl mb-2 text-blue-600">{service.title}</h3>
               <p className="text-gray-700">{service.desc}</p>
             </div>
@@ -123,4 +136,3 @@ export default function Home() {
     </main>
   );
 }
-
