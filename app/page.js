@@ -36,7 +36,7 @@ export default function Home() {
 
         {/* Services Section */}
         <section id="services" className="my-12">
-          <h2 className="text-3xl font-bold mb-8 text-center text-textPrimary">Our Services</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-[#333333]">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
@@ -60,7 +60,7 @@ export default function Home() {
                 className="p-6 border rounded-xl shadow-2xl hover:shadow-3xl transition hover:-translate-y-1 text-center bg-white"
               >
                 {service.icon}
-                <h3 className="font-semibold text-xl mb-2 text-[#1CAAA0]">{service.title}</h3>
+                <h3 className="font-semibold text-xl mb-2 text-[#333333]">{service.title}</h3>
                 <p className="text-textPrimary">{service.desc}</p>
               </div>
             ))}
@@ -69,7 +69,7 @@ export default function Home() {
 
         {/* Projects / Portfolio Section */}
         <section id="projects" className="my-12">
-          <h2 className="text-3xl font-bold mb-8 text-center text-textPrimary">Our Projects</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-[#333333]">Our Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
@@ -100,7 +100,7 @@ export default function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4 bg-white">
-                  <h3 className="font-semibold text-xl text-[#1CAAA0] mb-2">{project.title}</h3>
+                  <h3 className="font-semibold text-xl text-[#333333] mb-2">{project.title}</h3>
                   <p className="text-textPrimary">{project.desc}</p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="my-12 bg-secondary py-12 px-6 rounded-xl shadow-2xl">
-          <h2 className="text-3xl font-bold mb-4 text-textPrimary text-center">Get in Touch</h2>
+          <h2 className="text-3xl font-bold mb-4 text-[#333333] text-center">Get in Touch</h2>
           <p className="text-center mb-6 text-textPrimary">
             Call us at <strong>(555) 555-1234</strong> or fill out the form below.
           </p>
