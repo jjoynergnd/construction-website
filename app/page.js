@@ -18,8 +18,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="max-w-5xl mx-auto p-6" id="home">
-
+      <main className="max-w-5xl mx-auto p-6 pt-24" id="home">
         {/* Hero Section */}
         <section className="text-center my-12 bg-secondary py-16 rounded-xl shadow-2xl">
           <h1 className="text-5xl font-bold text-[#1CAAA0]">Acme Construction</h1>
