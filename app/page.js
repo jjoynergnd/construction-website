@@ -42,17 +42,17 @@ export default function Home() {
               {
                 title: "Residential Construction",
                 desc: "Custom homes, renovations, and remodeling.",
-                icon: <HomeIcon className="w-10 h-10 text-primary mb-4" />,
+                icon: <HomeIcon className="w-10 h-10 mb-4 text-[#1CAAA0]" />,
               },
               {
                 title: "Commercial Projects",
                 desc: "Office buildings, retail spaces, and warehouses.",
-                icon: <Building className="w-10 h-10 text-primary mb-4" />,
+                icon: <Building className="w-10 h-10 mb-4 text-[#1CAAA0]" />,
               },
               {
                 title: "Repairs & Maintenance",
                 desc: "Roofing, plumbing, electrical, and general upkeep.",
-                icon: <Wrench className="w-10 h-10 text-primary mb-4" />,
+                icon: <Wrench className="w-10 h-10 mb-4 text-[#1CAAA0]" />,
               },
             ].map((service) => (
               <div
@@ -160,6 +160,13 @@ export default function Home() {
 
       </main>
       <Footer />
+
+      {/* Smooth scroll behavior */}
+      <style jsx global>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
     </>
   );
 }
