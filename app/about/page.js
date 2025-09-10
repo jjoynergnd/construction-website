@@ -1,13 +1,10 @@
 // app/about/page.js
 import Hero from "../../components/Hero";      // Reuse Hero section if desired
-import Footer from "../../components/Footer";  // Consistent footer
-import Navbar from "../../components/Navbar";  // Sticky navigation
+
 
 export default function AboutPage() {
   return (
-    <main className="max-w-5xl mx-auto p-6">
-      {/* Navbar at top of every page */}
-      <Navbar />
+    <main className="max-w-5xl mx-auto p-6">     
 
       {/* A hero section just for About page (optional to reuse or customize) */}
       <section className="text-center my-12 bg-gray-50 py-16 rounded-lg shadow-lg">
@@ -36,8 +33,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Footer at bottom of page */}
-      <Footer />
+     
     </main>
   );
 }
