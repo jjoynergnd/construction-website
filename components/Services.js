@@ -4,14 +4,15 @@ export default function Services() {
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">Our Services</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Example Services</h2>
+        <p className="mx-auto mb-12 max-w-2xl text-center text-gray-600">Illustrative service categories for a fictional construction company website.</p>
 
         <div className="grid md:grid-cols-3 gap-8">
           <Link href="/services/residential">
             <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition cursor-pointer">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Residential Construction</h3>
               <p className="text-gray-600">
-                Custom homes, remodels, and additions designed to bring your vision to life.
+                Example scope: custom homes, remodels, and additions.
               </p>
             </div>
           </Link>
@@ -20,7 +21,7 @@ export default function Services() {
             <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition cursor-pointer">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Commercial Projects</h3>
               <p className="text-gray-600">
-                Offices, retail spaces, and developments that support your business growth.
+                Example scope: office and retail interior construction concepts.
               </p>
             </div>
           </Link>
@@ -29,7 +30,7 @@ export default function Services() {
             <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition cursor-pointer">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Repairs & Maintenance</h3>
               <p className="text-gray-600">
-                Reliable repair services and preventative maintenance for peace of mind.
+                Example scope: property repair and preventative maintenance.
               </p>
             </div>
           </Link>

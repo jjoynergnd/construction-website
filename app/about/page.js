@@ -1,39 +1,22 @@
-// app/about/page.js
-import Hero from "../../components/Hero";      // Reuse Hero section if desired
-
+export const metadata = {
+  title: "About This Demonstration",
+  description: "Learn about the fictional Acme Construction website portfolio demonstration.",
+};
 
 export default function AboutPage() {
   return (
-    <main className="max-w-5xl mx-auto p-6">     
-
-      {/* A hero section just for About page (optional to reuse or customize) */}
-      <section className="text-center my-12 bg-gray-50 py-16 rounded-lg shadow-lg">
-        <h1 className="text-5xl font-bold text-[#1DA1F2]">About Us</h1>
-        <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-          Learn more about Acme Construction — who we are, our values, and
-          why clients trust us for their biggest projects.
-        </p>
-      </section>
-
-      {/* About content section */}
+    <main className="mx-auto max-w-5xl px-5 py-8 sm:px-8">
+      <header className="my-8 rounded-2xl bg-gray-50 px-6 py-14 text-center shadow-sm sm:px-12">
+        <p className="font-semibold uppercase tracking-[0.16em] text-teal-700">Portfolio demonstration</p>
+        <h1 className="mt-3 text-4xl font-bold text-gray-900 sm:text-5xl">About this website</h1>
+        <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">Acme Construction is a fictional company created to demonstrate a construction website concept. No operating business, staff, or client relationships are represented here.</p>
+      </header>
       <section className="my-12">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Story</h2>
-        <p className="text-gray-700 mb-6 leading-relaxed">
-          With decades of experience in residential and commercial
-          construction, Acme Construction has built a reputation for
-          delivering projects on time and on budget. Our team is made up of
-          skilled professionals dedicated to quality craftsmanship and
-          customer satisfaction.
-        </p>
-
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Mission</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Our mission is simple: to turn your vision into reality while
-          providing a seamless, stress-free construction experience.
-        </p>
+        <h2 className="text-2xl font-bold text-gray-900">A sample brand and experience</h2>
+        <p className="mt-4 max-w-3xl leading-7 text-gray-700">This demo brings together example service information, a project concept portfolio, and a simulated contact form. The project pages describe design ideas only; they are not records of completed construction work.</p>
+        <h2 className="mt-8 text-2xl font-bold text-gray-900">What the concepts illustrate</h2>
+        <p className="mt-4 max-w-3xl leading-7 text-gray-700">The sample content shows how residential outdoor living, workplace renovation, and retail buildout ideas can be presented clearly. All business details and project imagery are illustrative.</p>
       </section>
-
-     
     </main>
   );
 }

@@ -1,21 +1,10 @@
-// app/projects/page.js
 import Projects from "../../components/Projects";
 
-export default function ProjectsPage() {
-  return (
-    <main>
-      {/* Reuse the Projects component */}
-      <Projects />
+export const metadata = {
+  title: "Project Concepts",
+  description: "Explore three fictional construction project concepts created for the Acme Construction portfolio demonstration.",
+};
 
-      {/* Extra placeholder for expansion */}
-      <section className="max-w-4xl mx-auto p-8 text-gray-700">
-        <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
-        <p>
-          Browse some of our most successful construction and renovation
-          projects. Each project demonstrates our commitment to detail and
-          quality.
-        </p>
-      </section>
-    </main>
-  );
+export default function ProjectsPage() {
+  return <main className="mx-auto max-w-6xl px-5 py-8 sm:px-8"><Projects /></main>;
 }

@@ -1,13 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 mt-16 py-8 text-center text-gray-700">
-      <p>© {new Date().getFullYear()} Acme Construction. All rights reserved.</p>
-      <p className="mt-2">
-        123 Main Street, [Your City] | (555) 555-1234 | info@acmeconstruction.com
-      </p>
-      <p className="mt-2">
-        <a href="#home" className="hover:text-orange-500 transition">Back to top</a>
-      </p>
+    <footer className="mt-16 bg-gray-100 py-8 text-center text-gray-700">
+      <p>© {new Date().getFullYear()} Acme Construction</p>
+      <p className="mx-auto mt-2 max-w-2xl px-4 text-sm">Portfolio Demonstration — Acme Construction is a fictional company. Projects and business information are illustrative.</p>
+      <p className="mt-3"><a href="#top" className="font-medium hover:text-teal-700 focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-600">Back to top</a></p>
     </footer>
   );
 }

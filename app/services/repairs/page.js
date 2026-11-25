@@ -1,25 +1,7 @@
-// app/services/repairs/page.js
 import Link from "next/link";
 
-export default function RepairServices() {
-  return (
-    <main className="max-w-4xl mx-auto p-8 text-gray-700">
-      <h1 className="text-3xl font-bold mb-4 text-teal-600">
-        Repairs & Maintenance
-      </h1>
-      <p className="mb-6">
-        Our team handles all types of repairs and ongoing maintenance to keep
-        your property in excellent condition, ensuring long-term safety and
-        value.
-      </p>
+export const metadata = { title: "Repairs and Maintenance Example" };
 
-      {/* Back Link */}
-      <Link
-        href="/services"
-        className="inline-block px-4 py-2 bg-teal-600 text-white rounded-lg shadow hover:bg-teal-700 transition"
-      >
-        ← Back to Services
-      </Link>
-    </main>
-  );
+export default function RepairServices() {
+  return <main className="mx-auto max-w-4xl px-6 py-12 text-gray-700"><h1 className="mb-4 text-3xl font-bold text-teal-700">Repairs &amp; Maintenance</h1><p className="mb-6 leading-7">Example scope for this fictional website: property repair and preventative maintenance as sample service categories. No repair or maintenance services are offered through this demonstration.</p><Link href="/services" className="inline-block rounded-lg bg-teal-700 px-4 py-2 text-white hover:bg-teal-800 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-teal-500">← Back to Services</Link></main>;
 }

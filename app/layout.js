@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Acme Construction",
-  description: "Licensed, Bonded & Insured General Contractors Serving [Your City]",
+  title: { default: "Acme Construction | Portfolio Demonstration", template: "%s | Acme Construction" },
+  description: "A fictional construction company website demonstration. Project concepts and business information are illustrative.",
 };
 
 export default function RootLayout({ children }) {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         
         {/* Page content (this is where page.js for each route loads) */}
-        <main>{children}</main>
+        <div id="top">{children}</div>
         
         {/* Footer should always be visible */}
         <Footer />
